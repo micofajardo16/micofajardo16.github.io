@@ -1,1 +1,146 @@
-"Hello Klaire" 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--- Bootstrap --->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--- Bunch of fonts --->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<!--- More copy pasted JQuery and Bootstrap --->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--- Link your html with css --->
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+			<div class="container-fluid">
+			
+											<!--- collapsable for small windows --->
+											<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+												<span class="sr-only">Toggle navigation</span>
+												<!--- Creates a burger icon thingy --->
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+											</div>
+											<!--- collapsable for small windows --->
+											
+											<!--- clickables --->
+											<div class="collapse navbar-collapse" id="myNavbar">
+												<ul class="nav navbar-nav navbar-right">
+													<li><a href="#top">	TOP</a></li>
+													<li><a href="#intro">INTRO</a></li>
+													<li><a href="#aboutMe">ABOUT ME</a></li>
+													<li><a href="#hobbies">HOBBIES</a></li>
+												</ul>
+											</div>	
+											<!--- clickables --->
+											
+
+			</div>
+	</div>
+	</nav>
+	
+	<div class="backgroundVideo" id="top">
+		<video id="backgroundVideoID" preload="auto" autoplay="true" loop="loop" muted="muted">
+			<source src="Untitled.mp4" type="video/mp4">
+		</video>
+	</div>
+	<br><br>
+	<div class="intro" name="intro" id="intro">
+		<p id="titleIntro">INTRO</p>
+		<img src="mainPhoto.png" id="mainPhoto" alt="profilePicture">
+		<p>Hi! My name is S. Juan Abelardo III, but you can call me S</p>
+		<p>I am 20 years old, currently taking BS Computer Science in UPLB</p>
+		<p>I love dogs, cats, tigers, lions, monkeys, elephants, girrafes</p>
+		<p>pandas, penguins, zebras, cheetas, bears, polar bears, jaguars</p>
+		<p>chickens, guinea pigs, ducks, horses, and not mice.</p>
+		<p>Maybe I should be a vetmed student instead? Well, not really</p>
+		<p>I only like how fascinating these animals are, but I'd never go near most of them</p>
+		<p>So why cmsc? I spent most of my childhood on the computer?</p>
+		<p>Why not spend most of my adulthood on the computer too, right?</p>
+	</div>
+	<br><br>
+	<hr>
+	<br><br>
+	
+	<div id="aboutMe" class="carousel slide" data-ride="carousel">
+	<p id="titleAboutMe"> ABOUT ME</p>
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		<li data-target="#aboutMe" data-slide-to="0" class="active"></li>
+		<li data-target="#aboutMe" data-slide-to="1"></li>
+		<li data-target="#aboutMe" data-slide-to="2"></li>
+		<li data-target="#aboutMe" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+			<h3>FAVORITE CMSC SUBJECT</h3>
+			<p>Definitely CMSC 22</p>
+			</div>
+			<div class="item">
+			<h3>FAVORITE PROGRAMMING LANGUAGE</span></h3>
+			<img src="javaPhoto.png">
+			<p>Java</p>
+			</div>
+			<div class="item">
+			<h3>FAVORITE FOOD<br></h3>
+			<img src="chicken curry.jpg">
+			<p>Chicken Curry. The pinoy style of course.</p>
+			</div>
+			<div class="item">
+			<h3><span id="navy">FAVORITE</span> <span id="olive">COLOR</span><br></h3>
+			<img src="colors.png">
+			<p>^^^ <span id="olive">Navy</span> and <span id="navy">Olive</span> ^^^</p>
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#aboutMe" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#aboutMe" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+		</a>
+	</div>
+	
+	<br><br>
+	<hr>
+	<br><br>
+	
+	<div id="hobbies" class="hobbies">
+		<p id="titleHobbies"> HOBBIES</p>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#buttonShown">Show</button>
+		<div id="buttonShown" class="collapse">
+			<p>Photography.</p>
+			<p>Gaming.</p>
+			<p>May malagay lang.</p>
+			<p>Spending time with precious people.</p>
+			<p>Precious people:</p>
+			<p>Klaire.</p>
+			<p>Family.</p>
+			<p>Dog.</p>
+			<p>Dog is also family.</p>
+			<p>Friends.</p>
+			<p>Dog. Again.</p>
+			<p>Reddit.</p>
+			<p>Watching streams.</p>
+			<p>Watching competitve.</p>
+			<p>Editing, see <a href="#top">TOP.</a></p>
+		</div>
+	</div>
+</body>
+</html>

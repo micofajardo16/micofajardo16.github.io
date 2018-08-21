@@ -1,0 +1,195 @@
+
+@font-face {
+    font-family: revolution;
+    src: url(revolution.TTF);
+}
+@font-face {
+    font-family: main;
+    src: url(roboto3.ttf);
+}
+@font-face {
+    font-family: varsity;
+    src: url(varsity.ttf);
+}
+@font-face {
+    font-family: cursive;
+    src: url(rise.ttf);
+}
+@font-face {
+    font-family: adobe;
+    src: url(adobe.ttf);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	line-height: 1.8;
+}
+  
+.navbar {
+	margin: 0px;
+	z-index: 9999;
+	border: 0;
+	font-size: 0.85em !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 0.3em;
+	border-radius: 0;
+	color:  #ff6666;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #ff6666 !important;
+}
+  
+.navbar-brand{
+  padding: 0px;
+  
+}
+
+.navbar-brand img {
+	height: 100%;
+	padding: 10px;
+	width: auto;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #fff !important;
+	background-color: #f4511e !important;
+	/*
+	Whenever the mouse is hovered, the background color
+	switches with the real color, adding a cool effect
+	*/
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #ff6666 !important;
+}
+
+.backgroundVideo{
+	position: relative;
+	z-index: -1000;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	top: 5;
+	left: 0;
+}
+			
+#backgroundVideoID{
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
+}
+
+#mainPhoto{
+	border-radius: 50%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 3em;
+	paddint-top: 2em;
+}
+
+.intro{
+	height: 100vh;
+}
+
+#titleIntro{
+	font-size: 4em;
+	font-family: cursive;
+	color: black;
+}
+
+.intro p{
+	font-size: 1.5em;
+	font-family: main;
+	color: #ff6666;
+	text-align: center;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#aboutMe{
+	height: 100vh;5
+}
+
+.carousel {
+    -webkit-transition: 0.1s ease-in-out left;
+    -moz-transition: 0.1s ease-in-out left;
+    -o-transition: 0.1s ease-in-out left;
+    transition: 0.1s ease-in-out left;
+}
+
+#titleAboutMe{
+	font-size: 4em;
+	font-family: cursive;
+	color: black;
+}
+
+.carousel h3{
+	font-size: 3em;
+	font-family: main;
+	color: #ff6666;
+	text-align: center;
+}
+
+.carousel p{
+	font-size: 1.5em;
+	font-family: main;
+	color: #ff6666;
+	text-align: center;
+}
+
+.carousel img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navy{
+	color: #091138;
+	font-weight: 900;
+}
+
+#olive{
+	color: #072F07;
+	font-weight: 900;
+
+}
+
+.hobbies{
+	height: 100vh;
+}
+
+#titleHobbies{
+	font-size: 4em;
+	font-family: cursive;
+	color: black;
+}
+
+.hobbies p{
+	font-size: 1.5em;
+	font-family: main;
+	color: #ff6666;
+	text-align: center;
+}
+
+.btn-info {
+	background-color: #f44336;
+	color: white;
+	padding: 14px 25px;
+	text-decoration: none;
+}
+
+.btn-info:hover, .btn-info:focus {
+	background-color: red;
+}
